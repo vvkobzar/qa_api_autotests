@@ -12,7 +12,7 @@ from clients.errors_schema import ValidationErrorResponseSchema, InternalErrorRe
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, GetFileResponseSchema
 from tools.assertions.files import assert_create_file_response, assert_get_file_response, \
     assert_create_file_with_empty_filename_response, assert_create_file_with_empty_directory_response, \
-    assert_file_not_found_response, assert_get_file_with_incorrect_file_id
+    assert_file_not_found_response, assert_get_file_with_incorrect_file_id_response
 from allure_commons.types import Severity
 
 
@@ -116,6 +116,6 @@ class TestFiles:
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, 422)
-        assert_get_file_with_incorrect_file_id(response_data)
+        assert_get_file_with_incorrect_file_id_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
