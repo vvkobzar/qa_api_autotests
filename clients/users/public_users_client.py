@@ -1,3 +1,4 @@
+import allure
 from clients.api_clients import APIClient
 from httpx import Response
 from clients.public_http_builder import get_public_http_client
@@ -5,6 +6,7 @@ from clients.users.users_schema import CreateUserRequestSchema, CreateUserRespon
 
 
 class PublicUsersClient(APIClient):
+    @allure.step("Create user")
     def create_user_api(self, request: CreateUserRequestSchema) -> Response:
         return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
 

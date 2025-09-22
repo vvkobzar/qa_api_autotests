@@ -1,3 +1,4 @@
+import allure
 from httpx import Response
 from clients.api_clients import APIClient
 from clients.exercises.exercises_schema import CreateExerciseRequestShema, CreateExerciseResponseShema, \
@@ -6,18 +7,23 @@ from clients.private_httpx_builder import AuthenticationUserSchema, get_private_
 
 
 class ExercisesClient(APIClient):
+    @allure.step("Get exercises")
     def get_exercises_api(self, course_id: GetExercisesQuerySchema) -> Response:
         return self.get("/api/v1/exercises", params=course_id.model_dump(by_alias=True))
 
+    @allure.step("Create exercise")
     def create_exercise_api(self, request: CreateExerciseRequestShema) -> Response:
         return self.post("/api/v1/exercises", json=request.model_dump(by_alias=True))
 
+    @allure.step("Get exercise by id {exercise_id}")
     def get_exercise_api(self, exercise_id) -> Response:
         return self.get(f"/api/v1/exercises/{exercise_id}")
 
+    @allure.step("Update exercise by id {exercise_id}")
     def update_exercise_api(self, exercise_id, request: UpdateExerciseRequestShema) -> Response:
         return self.patch(f"/api/v1/exercises/{exercise_id}", json=request.model_dump(by_alias=True))
 
+    @allure.step("Delete exercise by id {exercise_id}")
     def delete_exercise_api(self, exercise_id):
         return self.delete(f"/api/v1/exercises/{exercise_id}")
 
