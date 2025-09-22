@@ -17,12 +17,15 @@ from allure_commons.types import Severity
 
 
 @allure.epic(AllureEpic.LMS)
+@allure.suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.FILES)
+@allure.parent_suite(AllureFeature.FILES)
 @allure.tag(AllureTag.FILES, AllureTag.REGRESSION)
 @pytest.mark.files
 @pytest.mark.regression
 class TestFiles:
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("Create file")
     @allure.severity(Severity.BLOCKER)
@@ -37,6 +40,7 @@ class TestFiles:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.title("Get file")
     @allure.severity(Severity.BLOCKER)
@@ -50,6 +54,7 @@ class TestFiles:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.title("Create file with empty filename")
     @allure.severity(Severity.NORMAL)
@@ -67,6 +72,7 @@ class TestFiles:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.title("Create file with empty directory")
     @allure.severity(Severity.NORMAL)
@@ -84,6 +90,7 @@ class TestFiles:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
     @allure.tag(AllureTag.DELETE_ENTITY)
     @allure.title("Delete file")
     @allure.severity(Severity.NORMAL)
@@ -100,6 +107,7 @@ class TestFiles:
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.story(AllureStory.VALIDATE_ENTITY)
+    @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.title("Get file with incorrect file id")
     @allure.severity(Severity.NORMAL)

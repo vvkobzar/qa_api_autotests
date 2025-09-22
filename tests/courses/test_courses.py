@@ -18,12 +18,15 @@ from allure_commons.types import Severity
 
 
 @allure.epic(AllureEpic.LMS)
+@allure.suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
+@allure.parent_suite(AllureFeature.COURSES)
 @allure.tag(AllureTag.COURSES, AllureTag.REGRESSION)
 @pytest.mark.courses
 @pytest.mark.regression
 class TestCourses:
     @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.title("Update course")
     @allure.severity(Severity.CRITICAL)
@@ -38,6 +41,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.GET_ENTITIES)
+    @allure.sub_suite(AllureStory.GET_ENTITIES)
     @allure.tag(AllureTag.GET_ENTITIES)
     @allure.title("Get courses")
     @allure.severity(Severity.BLOCKER)
@@ -57,6 +61,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("Create course")
     @allure.severity(Severity.BLOCKER)

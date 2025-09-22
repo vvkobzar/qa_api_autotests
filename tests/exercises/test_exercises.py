@@ -19,12 +19,15 @@ from allure_commons.types import Severity
 
 
 @allure.epic(AllureEpic.LMS)
+@allure.suite(AllureFeature.EXERCISES)
 @allure.feature(AllureFeature.EXERCISES)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.tag(AllureTag.EXERCISES, AllureTag.REGRESSION)
 @pytest.mark.exercises
 @pytest.mark.regression
 class TestExercises:
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("Create exercise")
     @allure.severity(Severity.BLOCKER)
@@ -39,6 +42,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.title("Get exercise")
     @allure.severity(Severity.BLOCKER)
@@ -52,6 +56,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     @allure.tag(AllureTag.UPDATE_ENTITY)
     @allure.title("Update exercise")
     @allure.severity(Severity.CRITICAL)
@@ -69,6 +74,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
     @allure.tag(AllureTag.DELETE_ENTITY)
     @allure.title("Delete exercise")
     @allure.severity(Severity.CRITICAL)
@@ -85,6 +91,7 @@ class TestExercises:
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.story(AllureStory.GET_ENTITIES)
+    @allure.sub_suite(AllureStory.GET_ENTITIES)
     @allure.tag(AllureTag.GET_ENTITIES)
     @allure.title("Get exercises")
     @allure.severity(Severity.BLOCKER)

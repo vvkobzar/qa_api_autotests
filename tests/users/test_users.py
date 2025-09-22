@@ -16,12 +16,15 @@ from allure_commons.types import Severity
 
 
 @allure.epic(AllureEpic.LMS)
+@allure.suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.USERS)
+@allure.parent_suite(AllureFeature.USERS)
 @allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
 @pytest.mark.users
 @pytest.mark.regression
 class TestUsers:
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.title("Create user")
     @allure.severity(Severity.BLOCKER)
@@ -37,6 +40,7 @@ class TestUsers:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.title("Get user me")
     @allure.severity(Severity.CRITICAL)
