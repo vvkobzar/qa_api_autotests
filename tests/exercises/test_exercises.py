@@ -80,7 +80,7 @@ class TestExercises:
     @allure.severity(Severity.CRITICAL)
     def test_delete_exercise(self, exercises_client: ExercisesClient, function_exercises: ExercisesFixture):
         delete_response = exercises_client.delete_exercise_api(function_exercises.response.exercise.id)
-        assert_status_code(delete_response.status_code, 200)
+        assert_status_code(delete_response, 200)
 
         get_response = exercises_client.get_exercise_api(function_exercises.response.exercise.id)
         get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)

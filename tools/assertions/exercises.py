@@ -4,10 +4,16 @@ from clients.exercises.exercises_schema import CreateExerciseRequestShema, Creat
     GetExerciseResponseShema, UpdateExerciseRequestShema, UpdateExerciseResponseShema, GetExercisesResponseShema
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
+from tools.logger import get_logger
+
+
+logger = get_logger("EXERCISES_ASSERTIONS")
 
 
 allure.step("Check create exercises response")
 def assert_create_exercises_response(request: CreateExerciseRequestShema, response: CreateExerciseResponseShema):
+    logger.info("Check create exercises response")
+
     assert_equal(request.title, response.exercise.title, "title")
     assert_equal(request.course_id, response.exercise.course_id, "course_id")
     assert_equal(request.max_score, response.exercise.max_score, "max_score")
@@ -18,6 +24,8 @@ def assert_create_exercises_response(request: CreateExerciseRequestShema, respon
 
 allure.step("Check exercise")
 def assert_exercise(expected: ExerciseShema, actual: ExerciseShema):
+    logger.info("Check exercise")
+
     assert_equal(expected.id, actual.id, "id")
     assert_equal(expected.title, actual.title, "title")
     assert_equal(expected.course_id, actual.course_id, "course_id")
@@ -29,10 +37,14 @@ def assert_exercise(expected: ExerciseShema, actual: ExerciseShema):
 
 allure.step("Check get exercise response")
 def assert_get_exercise_response(created_exercise, response: GetExerciseResponseShema):
+    logger.info("Check get exercise response")
+
     assert_exercise(created_exercise, response.exercise)
 
 allure.step("Check update exercise response")
 def assert_update_exercise_response(request: UpdateExerciseRequestShema, response: UpdateExerciseResponseShema):
+    logger.info("Check update exercise response")
+
     assert_equal(request.title, response.exercise.title, "title")
     assert_equal(request.max_score, response.exercise.max_score, "max_score")
     assert_equal(request.min_score, response.exercise.min_score, "min_score")
@@ -42,6 +54,8 @@ def assert_update_exercise_response(request: UpdateExerciseRequestShema, respons
 
 allure.step("Check exercise not found response")
 def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
+    logger.info("Check exercise not found response")
+
     expected = InternalErrorResponseSchema(detail="Exercise not found")
     assert_internal_error_response(expected, actual)
 
@@ -50,6 +64,8 @@ def assert_get_exercises_response(
         create_exercises_response: list[CreateExerciseResponseShema],
         get_exercises_response: GetExercisesResponseShema
 ):
+    logger.info("Check get exercises response")
+
     assert_length(create_exercises_response, get_exercises_response.exercises, "exercises")
 
     for index, create_exercise_response in enumerate(create_exercises_response):

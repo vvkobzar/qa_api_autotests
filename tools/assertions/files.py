@@ -5,10 +5,16 @@ from tools.assertions.base import assert_equal
 from clients.files.files_schema import FileSchema
 from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
 from config import settings
+from tools.logger import get_logger
+
+
+logger = get_logger("FILES_ASSERTIONS")
 
 
 @allure.step("Check create file response")
 def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
+    logger.info("Check create file response")
+
     expected_url = f"{settings.http_client.client_url}static/{request.directory}/{request.filename}"
 
     assert_equal(expected_url, str(response.file.url), "url")
@@ -17,6 +23,8 @@ def assert_create_file_response(request: CreateFileRequestSchema, response: Crea
 
 @allure.step("Check file")
 def assert_file(expected: FileSchema, actual: FileSchema):
+    logger.info("Check file")
+
     assert_equal(expected.id, actual.id, "id")
     assert_equal(expected.url, actual.url, "url")
     assert_equal(expected.filename, actual.filename, "file_name")
@@ -27,10 +35,14 @@ def assert_get_file_response(
         get_file_response: GetFileResponseSchema,
         create_file_response: CreateFileResponseSchema
 ):
+    logger.info("Check get file response")
+
     assert_file(create_file_response.file, get_file_response.file)
 
 @allure.step("Check create file with empty filename response")
 def assert_create_file_with_empty_filename_response(actual: ValidationErrorResponseSchema):
+    logger.info("Check create file with empty filename response")
+
     expected = ValidationErrorResponseSchema(
         detail=[
             ValidationErrorSchema(
@@ -46,6 +58,8 @@ def assert_create_file_with_empty_filename_response(actual: ValidationErrorRespo
 
 @allure.step("Check create file with empty directory response")
 def assert_create_file_with_empty_directory_response(actual: ValidationErrorResponseSchema):
+    logger.info("Check create file with empty directory response")
+
     expected = ValidationErrorResponseSchema(
         detail=[
             ValidationErrorSchema(
@@ -61,11 +75,15 @@ def assert_create_file_with_empty_directory_response(actual: ValidationErrorResp
 
 @allure.step("Check file not found response")
 def assert_file_not_found_response(actual: InternalErrorResponseSchema):
+    logger.info("Check file not found response")
+
     expected = InternalErrorResponseSchema(detail="File not found")
     assert_internal_error_response(expected, actual)
 
 @allure.step("Check get file with incorrect file id response")
 def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorResponseSchema):
+    logger.info("Check get file with incorrect file id response")
+
     expected = ValidationErrorResponseSchema(
         detail=[
             ValidationErrorSchema(

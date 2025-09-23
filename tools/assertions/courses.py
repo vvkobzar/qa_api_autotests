@@ -4,10 +4,16 @@ from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCour
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
+from tools.logger import get_logger
+
+
+logger = get_logger("COURSES_ASSERTIONS")
 
 
 @allure.step("Check update course response")
 def assert_update_course_response(request: UpdateCourseRequestSchema, response: UpdateCourseResponseSchema):
+    logger.info("Check update course response")
+
     assert_equal(request.title, response.course.title, "title")
     assert_equal(request.max_score, response.course.max_score, "max_score")
     assert_equal(request.min_score, response.course.min_score, "min_score")
@@ -16,6 +22,8 @@ def assert_update_course_response(request: UpdateCourseRequestSchema, response: 
 
 @allure.step("Check course")
 def assert_course(expected: CourseSchema, actual: CourseSchema):
+    logger.info("Check course")
+
     assert_equal(expected.id, actual.id, "id")
     assert_equal(expected.title, actual.title, "title")
     assert_equal(expected.max_score, actual.max_score, "max_score")
@@ -31,6 +39,8 @@ def assert_get_courses_response(
         create_course_responses: list[CreateCourseResponseSchema],
         get_courses_responses: GetCoursesResponseSchema
 ):
+    logger.info("Check get courses response")
+
     assert_length(create_course_responses, get_courses_responses.courses, "courses")
 
     for index, create_course_response in enumerate(create_course_responses):
@@ -38,6 +48,8 @@ def assert_get_courses_response(
 
 @allure.step("Check create course response")
 def assert_create_course_response(request: CreateCourseRequestSchema, response: CreateCourseResponseSchema):
+    logger.info("Check create course response")
+
     assert_equal(request.title, response.course.title, "title")
     assert_equal(request.max_score, response.course.max_score, "max_score")
     assert_equal(request.min_score, response.course.min_score, "min_score")
