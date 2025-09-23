@@ -1,13 +1,14 @@
 import allure
 from typing import Any, Sized
+from httpx import Response
 
 
-@allure.step("Check that response status code equals to {expected}")
-def assert_status_code(actual: int, expected: int):
-    assert expected == actual, (
+@allure.step("Check that response status code equals to {expected_status_code}")
+def assert_status_code(response: Response, expected_status_code: int):
+    assert  response.status_code == expected_status_code, (
         "Incorrect response status code. "
-        f"Expected status code: {expected}. "
-        f"Actual status code: {actual}"
+        f"Expected status code: {expected_status_code}. "
+        f"Response status code: {response.status_code}"
     )
 
 

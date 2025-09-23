@@ -30,7 +30,7 @@ class TestAuthentication:
         response = authentication_client.login_api(request)
         response_data = LoginResponseSchema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_login_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())

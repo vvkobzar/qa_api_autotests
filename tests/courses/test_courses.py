@@ -35,7 +35,7 @@ class TestCourses:
         response = courses_client.update_course_api(function_course.response.course.id, request)
         response_data = UpdateCourseResponseSchema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_update_course_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -55,7 +55,7 @@ class TestCourses:
         response = courses_client.get_courses_api(query)
         response_data = GetCoursesResponseSchema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_get_courses_response([function_course.response], response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -73,7 +73,7 @@ class TestCourses:
         response = courses_client.create_course_api(request)
         response_data = CreateCourseResponseSchema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_create_course_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())

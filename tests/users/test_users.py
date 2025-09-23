@@ -34,7 +34,7 @@ class TestUsers:
         response = public_users_client.create_user_api(request)
         response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_create_user_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -48,7 +48,7 @@ class TestUsers:
         response = private_user_client.get_user_me_api()
         response_data = GetUserResponseSchema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_get_user_response(create_user_response=function_user.response, get_user_response=response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())

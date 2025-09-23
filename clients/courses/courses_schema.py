@@ -44,6 +44,8 @@ class CreateCourseResponseSchema(BaseModel):
 
 
 class UpdateCourseRequestSchema(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
     title: str | None = Field(default_factory=fake.sentence)
     max_score: int | None = Field(alias="maxScore", default_factory=fake.max_score)
     min_score: int | None = Field(alias="minScore", default_factory=fake.mix_score)

@@ -36,7 +36,7 @@ class TestExercises:
         response = exercises_client.create_exercise_api(request)
         response_data = CreateExerciseResponseShema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_create_exercises_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -50,7 +50,7 @@ class TestExercises:
         response = exercises_client.get_exercise_api(function_exercises.response.exercise.id)
         response_data = GetExerciseResponseShema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_get_exercise_response(function_exercises.response.exercise, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -68,7 +68,7 @@ class TestExercises:
         )
         response_data = UpdateExerciseResponseShema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_update_exercise_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -85,7 +85,7 @@ class TestExercises:
         get_response = exercises_client.get_exercise_api(function_exercises.response.exercise.id)
         get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
 
-        assert_status_code(get_response.status_code, 404)
+        assert_status_code(get_response, 404)
         assert_exercise_not_found_response(get_response_data)
 
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
@@ -105,7 +105,7 @@ class TestExercises:
         response = exercises_client.get_exercises_api(query)
         response_data = GetExercisesResponseShema.model_validate_json(response.text)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response, 200)
         assert_get_exercises_response([function_exercises.response], response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
