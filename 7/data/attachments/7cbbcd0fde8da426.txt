@@ -1,0 +1,33 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:17 Make GET request to http://localhost:8000/api/v1/courses?userId=629b6a20-f5e9-4bb9-9c1e-a3a48bb6874f
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=629b6a20-f5e9-4bb9-9c1e-a3a48bb6874f
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:42 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:52 Check that length of 'courses', equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:25 Check course
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'id' equals to '3ec6fabd-9db5-4303-b703-6630bf391fa1'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'title' equals to 'Задрать жидкий карандаш следовательно жестокий карман инвалид.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'max_score' equals to '54'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'min_score' equals to '11'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'description' equals to 'Торговля ручей инфекция тюрьма. Отметить налево а. Падаль неожиданно достоинство встать.
+Мучительно очутиться команда рассуждение бровь похороны домашний. Деньги возмутиться за ломать юный.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'estimated_time' equals to '1 weeks'
+INFO     FILES_ASSERTIONS:files.py:26 Check file
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'id' equals to '2928e0fe-e7f2-43d4-9c02-f4d6f409b8cf'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'url' equals to 'http://localhost:8000/static/tests/9c263dc1-07e6-46ba-8957-bdf1e36f0aba.png'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'file_name' equals to '9c263dc1-07e6-46ba-8957-bdf1e36f0aba.png'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'directory' equals to 'tests'
+INFO     USERS_ASSERTIONS:users.py:22 Check user
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'id' equals to '629b6a20-f5e9-4bb9-9c1e-a3a48bb6874f'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'email' equals to 'miron1999@example.com'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'last_name' equals to 'Лебедева'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'first_name' equals to 'Тит'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'middle_name' equals to 'Фомич'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

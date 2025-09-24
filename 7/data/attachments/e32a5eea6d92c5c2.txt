@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjE3Ljg1Nzc5OSIsInVzZXJfaWQiOiI0ZDliMzViZS03YWFlLTQxMTgtYjZiMS0wZTVmYWM3YzA5MzkifQ.lw_T3KvV55JribHSuP2hruGr0W3AJPgr08_YPgERT-M' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Призыв медицина присесть упорно покидать вздрогнуть.","maxScore":62,"minScore":28,"description":"Блин достоинство важный потом. Бегать проход естественный.","estimatedTime":"6 weeks","previewFileId":"971a2214-4ac8-4b45-9c79-5f3afc938683","createdByUserId":"4d9b35be-7aae-4118-b6b1-0e5fac7c0939"}'

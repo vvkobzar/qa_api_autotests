@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjEzLjM4Nzc0NiIsInVzZXJfaWQiOiI0YmRlNzg2My1mNjRjLTQ1OWUtYTRkYi03MzA0ZTI2YjI0N2MifQ.vSgCqiWPCI8CYbGhFPLhQbcc9hwMgveJtooMBx8kRY0' \
+  -H 'content-length: 674' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Сбросить неправда кидать каюта расстройство головка сверкающий.","maxScore":63,"minScore":3,"description":"Еврейский свежий собеседник функция соответствие. Секунда прежде какой инструкция приходить трубка крыса лапа.\nПалата болото головной теория покидать. Пятеро наступать житель поговорить металл.","estimatedTime":"4 weeks","previewFileId":"00c8e036-3e22-4464-a5d3-f47c4684939e","createdByUserId":"4bde7863-f64c-459e-a4db-7304e26b247c"}'

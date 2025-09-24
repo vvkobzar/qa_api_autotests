@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:17 Make PATCH request to http://localhost:8000/api/v1/exercises/90083b94-2139-41bb-920b-4003486023fe
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises/90083b94-2139-41bb-920b-4003486023fe
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:46 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'title' equals to 'Правый ученый покидать дурацкий.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'max_score' equals to '86'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'min_score' equals to '15'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'order_index' equals to '80'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'description' equals to 'Нервно рай домашний дремать висеть. Четко светило рассуждение заложить тесно.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'estimated_time' equals to '9 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

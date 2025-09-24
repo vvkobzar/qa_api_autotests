@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/2b336610-8d17-47b3-8906-b8defee95f95' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjEzLjM4Nzc0NiIsInVzZXJfaWQiOiI0YmRlNzg2My1mNjRjLTQ1OWUtYTRkYi03MzA0ZTI2YjI0N2MifQ.vSgCqiWPCI8CYbGhFPLhQbcc9hwMgveJtooMBx8kRY0' \
+  -H 'content-length: 387' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Плод аллея проход приятель наслаждение забирать.","maxScore":99,"minScore":8,"description":"Запеть затянуться солнце лапа свежий казнь.\nРазвитый процесс неправда дружно близко. Палец вздрогнуть банда спасть.","estimatedTime":"10 weeks"}'

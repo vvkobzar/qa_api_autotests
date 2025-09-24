@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjE2LjYyNjIwMCIsInVzZXJfaWQiOiJmMDkxZWZhZC1hNTBhLTRkYWMtODE2Yy0yYzQyMmRkYWMyNDIifQ.X6Bl1z8dDfJiogbpB0S92gStRwjvwSnF8JDnNuR60LQ' \
+  -H 'content-length: 609' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Призыв добиться уничтожение интеллектуальный новый.","courseId":"d8e6a88a-229c-450f-b408-0d7880909baa","maxScore":94,"minScore":4,"orderIndex":21,"description":"Темнеть чем спичка пропасть кольцо парень порядок.\nЕврейский падаль возмутиться неправда трубка. Деловой смелый упорно дошлый поговорить человечек. Неправда трясти указанный ремень райком термин.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjE4LjQ4NDc5NiIsInVzZXJfaWQiOiI2YWEzNTJmNy0yM2QxLTQ5MDItOTBjNC1jY2I5OWIwM2U3YmYifQ.B_bzUgA4mPYIG9wAUpGCNRGXjxTacf5J1rO9CwlQLo4' \
+  -H 'content-length: 610' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Разуметься рассуждение растеряться исполнять магазин добиться.","maxScore":51,"minScore":12,"description":"Лиловый постоянный о крутой.\nУмолять рис соответствие мучительно. Актриса решетка бровь сбросить важный сохранять. Деловой набор носок художественный домашний.","estimatedTime":"5 weeks","previewFileId":"c1d22ee0-9550-4b72-ad42-a3c2cafb53ed","createdByUserId":"6aa352f7-23d1-4902-90c4-ccb99b03e7bf"}'

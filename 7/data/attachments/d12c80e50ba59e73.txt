@@ -1,0 +1,25 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:17 Make GET request to http://localhost:8000/api/v1/exercises?courseId=99cb7545-9131-4af9-87e4-b6dac1ba2832
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=99cb7545-9131-4af9-87e4-b6dac1ba2832
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:67 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:52 Check that length of 'exercises', equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:27 Check exercise
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'id' equals to 'f50be8f4-4ce0-4cb3-a817-b3a8de1d1841'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'title' equals to 'Ученый правление дремать.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'course_id' equals to '99cb7545-9131-4af9-87e4-b6dac1ba2832'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'max_score' equals to '76'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'min_score' equals to '28'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'order_index' equals to '61'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'description' equals to 'Следовательно дорогой плод страсть. Радость решетка изменение провал процесс. Выраженный ученый выражаться проход мрачно разводить интеллектуальный.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'estimated_time' equals to '1 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

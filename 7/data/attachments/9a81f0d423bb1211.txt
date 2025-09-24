@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/90083b94-2139-41bb-920b-4003486023fe' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjE2LjA0MTM1MCIsInVzZXJfaWQiOiI0ZjNjNjhjMC0zYTJmLTQyMzMtOGNkNC01YjdkMTQ5NmZmZmEifQ.oMV7xGdxyw2r4wCZnOidp5Tf77CweF-Z61AXwWHu7mk' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Правый ученый покидать дурацкий.","maxScore":86,"minScore":15,"orderIndex":80,"description":"Нервно рай домашний дремать висеть. Четко светило рассуждение заложить тесно.","estimatedTime":"9 weeks"}'

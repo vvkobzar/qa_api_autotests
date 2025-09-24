@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjE1LjQ1OTE1MSIsInVzZXJfaWQiOiJmNDJkNWIzNy05NDJhLTQwNjAtOWFiMi0zNmQ3Zjg3OTViOTQifQ.esSmiOoTz_RTldb4hGp9EABMvUOWiC8hCXncGGVmh2M' \
+  -H 'content-length: 678' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Соответствие монета художественный темнеть за задрать лететь.","maxScore":54,"minScore":19,"description":"Полоска девка беспомощный растеряться ученый. Потянуться пробовать пастух добиться войти песенка советовать. Пастух затянуться дремать конструкция.\nУгодный способ единый развернуться направо банк.","estimatedTime":"5 weeks","previewFileId":"46ac1ced-6c78-4c99-bd42-a9f972d59804","createdByUserId":"f42d5b37-942a-4060-9ab2-36d7f8795b94"}'

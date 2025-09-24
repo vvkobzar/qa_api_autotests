@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjUzOjE3Ljg1Nzc5OSIsInVzZXJfaWQiOiI0ZDliMzViZS03YWFlLTQxMTgtYjZiMS0wZTVmYWM3YzA5MzkifQ.lw_T3KvV55JribHSuP2hruGr0W3AJPgr08_YPgERT-M' \
+  -H 'content-length: 553' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Пасть смертельный невозможно скользить.","courseId":"2d0d451f-65e6-4da5-9a04-2ff01176062b","maxScore":72,"minScore":17,"orderIndex":77,"description":"Актриса жидкий смеяться написать сустав. Войти выражаться неудобно тяжелый легко жить легко.\nЕврейский монета порт магазин лететь собеседник блин. Выгнать за манера торговля что.","estimatedTime":"5 weeks"}'
