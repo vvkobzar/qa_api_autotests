@@ -28,6 +28,16 @@ def assert_equal(expected: Any, actual: Any, name: str):
        f"Actual value: '{actual}'"
     )
 
+@allure.step("Check that {name} unequals to {expected}")
+def assert_unequal(expected: Any, actual: Any, name: str):
+    logger.info(f"Check that '{name}' unequals to '{expected}'")
+
+    assert expected != actual, (
+        f"Incorrect value: '{name}', "
+        f"Expected value: '{expected}' "
+        f"Actual value: '{actual}'"
+    )
+
 @allure.step("Check that {name} is true")
 def assert_is_true(actual: Any, name: str):
     logger.info(f"Check that '{name}' is true")
