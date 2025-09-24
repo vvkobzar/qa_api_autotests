@@ -1,4 +1,10 @@
+# pycharm
+.idea
+
+# python
+.venv
+__pycache__
+
+# allure
 allure-report
 allure-results
-__pycache__
-.gitignore

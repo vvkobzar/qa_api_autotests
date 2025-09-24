@@ -1,8 +1,8 @@
 import pytest
 import allure
 from clients.authentication.authentication_client import AuthenticationClient
-from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, RefreshRequestSchema, \
-    RefreshResponseSchema
+from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, \
+    RefreshRequestSchema, RefreshResponseSchema
 from fixtures.authentication import AuthenticationFixture
 from fixtures.users import UserFixture
 from tools.allure.epics import AllureEpic
@@ -37,6 +37,7 @@ class TestAuthentication:
         assert_login_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
     @allure.story(AllureStory.VALIDATE_ENTITY)
     @allure.sub_suite(AllureStory.VALIDATE_ENTITY)
     @allure.title("Updating an access token using a refresh token")
