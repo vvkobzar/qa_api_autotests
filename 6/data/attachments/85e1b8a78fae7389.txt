@@ -1,0 +1,14 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/refresh
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/refresh
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     AUTHENTICATIONS_ASSERTIONS:authentication.py:21 Check refresh token response
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'token_type' equals to 'bearer'
+INFO     BASE_ASSERTIONS:base.py:43 Check that 'access_token' is true
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'refresh_token' equals to 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTIzVDEwOjAxOjE2LjM4MTQwNSIsInVzZXJfaWQiOiIwMzdhYzkxYS00NWRmLTQzY2YtOTQ0MS0xOTFlZmY4NGFiNDIifQ.TN5upq8qDYvNOpWiG0tD90xvOQ3UzW5kKAMj4R9zwLI'
+INFO     AUTHENTICATIONS_ASSERTIONS:authentication.py:29 Check that old access token does not match the new access token
+INFO     BASE_ASSERTIONS:base.py:33 Check that 'access_token' unequals to 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE2LjM4MTIyNiIsInVzZXJfaWQiOiIwMzdhYzkxYS00NWRmLTQzY2YtOTQ0MS0xOTFlZmY4NGFiNDIifQ._7ZR13vInLTqCmMX36MyAKpHHt88MNZmglOO0UAFNls'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

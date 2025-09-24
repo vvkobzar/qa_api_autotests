@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE2LjY1NTg1NCIsInVzZXJfaWQiOiI4ZDViOTMxMy1mYzcwLTQxMjEtYTg3Ny1kMDljZTdhZDI1MWIifQ.mzOd2ylFtyCFeDxfwihj8BwaHsycG9tSAlGmBjVDBhk' \
+  -H 'content-length: 554' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Бок сбросить ночь провинция ложиться.","maxScore":54,"minScore":5,"description":"Нож юный карандаш полевой команда табак. Висеть багровый освобождение цель витрина потянуться зеленый приходить. Полюбить вчера скользить дружно устройство.","estimatedTime":"5 weeks","previewFileId":"5232f88b-dda8-40c3-a69d-81e6036d55ea","createdByUserId":"8d5b9313-fc70-4121-a877-d09ce7ad251b"}'

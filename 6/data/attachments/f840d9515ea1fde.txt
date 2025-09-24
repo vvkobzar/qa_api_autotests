@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjIwLjMxMDYyOCIsInVzZXJfaWQiOiI5MTNkNjE3NS02NTAxLTQ0MmEtYWUxYi04ZGZkOTY3MjY1MTAifQ.aV9NJWGT5VfU6tfTi32TZ-CGCcCtu6peGF6Fhaj41jA' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Спалить кидать наслаждение спешить.","maxScore":50,"minScore":4,"description":"Зарплата правление потрясти роса очутиться умирать горький пропаганда.","estimatedTime":"6 weeks","previewFileId":"b07127f6-4007-4ee7-8d53-17cafb7bc4c8","createdByUserId":"913d6175-6501-442a-ae1b-8dfd96726510"}'

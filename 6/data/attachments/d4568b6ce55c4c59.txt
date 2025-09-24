@@ -1,0 +1,20 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:17 Make DELETE request to http://localhost:8000/api/v1/exercises/6323cc51-3329-4242-9340-ecc46ac50682
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises/6323cc51-3329-4242-9340-ecc46ac50682
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     HTTP_LOGGER:event_hooks.py:17 Make GET request to http://localhost:8000/api/v1/exercises/6323cc51-3329-4242-9340-ecc46ac50682
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 404 Not Found from http://localhost:8000/api/v1/exercises/6323cc51-3329-4242-9340-ecc46ac50682
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 404
+INFO     EXERCISES_ASSERTIONS:exercises.py:57 Check exercise not found response
+INFO     ERRORS_ASSERTIONS:errors.py:37 Check internal error response
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'details' equals to 'Exercise not found'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

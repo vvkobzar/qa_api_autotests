@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:17 Make PATCH request to http://localhost:8000/api/v1/exercises/1fd4216c-408e-49d5-bceb-6cdabd7d08af
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises/1fd4216c-408e-49d5-bceb-6cdabd7d08af
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:46 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'title' equals to 'Недостаток налево один плясать конференция.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'max_score' equals to '85'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'min_score' equals to '23'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'order_index' equals to '2'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'description' equals to 'Ныне ручей опасность упорно багровый выкинуть пол. Социалистический засунуть приятель солнце указанный. А прощение цель коробка слишком выраженный исследование.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'estimated_time' equals to '10 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

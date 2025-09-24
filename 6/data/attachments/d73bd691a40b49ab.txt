@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE3LjI3NzY3OSIsInVzZXJfaWQiOiJhYWU5ZDI1Yy0yMGM5LTRlZmMtYTc2ZC1mOWQ2NWU2ZjVlMzQifQ.qyV7JDCzSO6bT3Ar5LfsOMWad7ajz-yeBeBHtMm5vUg' \
+  -H 'content-length: 541' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Костер естественный неожиданный.","maxScore":50,"minScore":19,"description":"Пастух мгновение светило появление следовательно товар трубка. Налоговый песенка деловой труп триста. Выгнать около левый провинция витрина сравнение аж.","estimatedTime":"7 weeks","previewFileId":"6188d0a4-0d89-4cc9-b418-b967d5a1e52a","createdByUserId":"aae9d25c-20c9-4efc-a76d-f9d65e6f5e34"}'

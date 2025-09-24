@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE5LjA4NzE4OCIsInVzZXJfaWQiOiI0MTkxMGVlZi1lZjBlLTQwYmUtYmI3Yy0yNDQzYmY2NzFhYzEifQ.g6PPtjDWCarJqCjuXLEOxM3Hv2oIiMC8zOWzQjBrsB8' \
+  -H 'content-length: 497' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ответить возможно жить естественный идея.","courseId":"d64622ed-cc57-4df5-8e86-b37f5388c9f5","maxScore":60,"minScore":2,"orderIndex":76,"description":"Помолчать равнодушный изменение цепочка банда трясти неправда. Художественный самостоятельно славный. Монета место трубка ложиться уточнить жить.","estimatedTime":"1 weeks"}'

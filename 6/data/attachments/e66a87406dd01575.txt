@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE5LjA4NzE4OCIsInVzZXJfaWQiOiI0MTkxMGVlZi1lZjBlLTQwYmUtYmI3Yy0yNDQzYmY2NzFhYzEifQ.g6PPtjDWCarJqCjuXLEOxM3Hv2oIiMC8zOWzQjBrsB8' \
+  -H 'content-length: 593' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Собеседник встать анализ гулять порог правление.","maxScore":78,"minScore":2,"description":"Деньги палка господь дыхание еврейский. Теория возмутиться очутиться. Прежде пространство покидать важный неправда порт тревога. Вряд спешить естественный слать ночь.","estimatedTime":"6 weeks","previewFileId":"d5d609bc-80fa-471c-893f-d5c14180a5e1","createdByUserId":"41910eef-ef0e-40be-bb7c-2443bf671ac1"}'

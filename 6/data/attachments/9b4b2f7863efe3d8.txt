@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:17 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:21 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:12 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:15 Check create exercises response
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'title' equals to 'Тяжелый художественный холодно рис мягкий.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'course_id' equals to 'de59fbb8-0811-4ee8-bc91-a367055bbff6'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'max_score' equals to '81'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'min_score' equals to '6'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'order_index' equals to '38'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'description' equals to 'Бригада уточнить соответствие темнеть. Освободить вряд проход.
+Бетонный точно заплакать засунуть возникновение выражение. Теория расстройство куча вперед интернет.'
+INFO     BASE_ASSERTIONS:base.py:23 Check that 'estimated_time' equals to '8 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:13 Validation JSON schema

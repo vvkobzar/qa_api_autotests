@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/1fd4216c-408e-49d5-bceb-6cdabd7d08af' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE3Ljg2MjgzOCIsInVzZXJfaWQiOiJhNzI5ODczOS1kZDc3LTQwZWItYjM0Zi1lZGNiMjZmNzgyNDUifQ.6PpvNwTzQJ5fC-dJ6FikWJYrTJrB_4lgddEL65To0BQ' \
+  -H 'content-length: 479' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Недостаток налево один плясать конференция.","maxScore":85,"minScore":23,"orderIndex":2,"description":"Ныне ручей опасность упорно багровый выкинуть пол. Социалистический засунуть приятель солнце указанный. А прощение цель коробка слишком выраженный исследование.","estimatedTime":"10 weeks"}'

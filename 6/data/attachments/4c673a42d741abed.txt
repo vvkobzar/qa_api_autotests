@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE4LjQ1MjU4NCIsInVzZXJfaWQiOiI0YjM0MGRkZi1lMjI5LTRmMzUtYTc1MS0zOGI4YTNhMTUyM2EifQ.sIEuXVaYG7zMPYQWNav9RsGguuAbK8WgJPR08c0rIO8' \
+  -H 'content-length: 548' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Умирать желание научить слишком витрина цепочка.","maxScore":60,"minScore":10,"description":"Горький недостаток космос запретить сопровождаться аллея. Через наступать куча палец металл. Лиловый бок освободить выражаться сустав пятеро.","estimatedTime":"8 weeks","previewFileId":"32836b7a-c882-4212-8213-21b6ec05c150","createdByUserId":"4b340ddf-e229-4f35-a751-38b8a3a1523a"}'

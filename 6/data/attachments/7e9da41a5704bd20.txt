@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b292606a-584a-41fa-8c9a-24d68079803d' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI0VDEwOjMxOjE1LjIxNTAxMyIsInVzZXJfaWQiOiI4YjNmMzJhYS00NzIyLTQ1NzYtODJlMC0yZjM5MDhmMTcwNmQifQ.z16IeOx9kI4w2Y3k6HObNH_3TfXhPK8R6v87FdxbdB8' \
+  -H 'content-length: 468' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Поздравлять жестокий блин цвет.","maxScore":86,"minScore":26,"description":"Космос анализ угол штаб. Пробовать потом неожиданно правление слать домашний. Порог ученый место вытаскивать сверкать спорт сомнительный. Ломать лететь чувство редактор триста.","estimatedTime":"8 weeks"}'
