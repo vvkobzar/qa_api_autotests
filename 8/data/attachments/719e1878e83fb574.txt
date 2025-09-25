@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjIyLjgzNTM0NiIsInVzZXJfaWQiOiJhMWM3OTRkOC02ZTJmLTQwMDctYWViYy0wYjlhYmViMTk2N2IifQ.kEi9GlXGSSPqvLpnGM6eRFER8G9d0wG9ZiI7hV0N0tY' \
+  -H 'content-length: 394' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Дальний жидкий умолять забирать конструкция.","courseId":"df3ff600-768b-4502-897b-fc1084c98b6e","maxScore":82,"minScore":6,"orderIndex":51,"description":"Порог ломать указанный. Приятель зеленый подземный появление светило рабочий указанный.","estimatedTime":"1 weeks"}'

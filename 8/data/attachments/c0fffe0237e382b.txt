@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjIyLjI1MDYxMyIsInVzZXJfaWQiOiIxYjI3MGQyMS0yZGQ5LTQwOTAtODU2MS1iNTY5OGI5YjY1OTcifQ.ESKYYeEsrpVrJluT7EGWf1c6fftaspUz1kzHu94a3JE' \
+  -H 'content-length: 483' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Тревога эффект госпожа сутки ломать болото кидать.","courseId":"35e977a8-b0d1-4ec3-b7c2-d1258cc863ba","maxScore":93,"minScore":8,"orderIndex":11,"description":"Важный добиться тесно миф командир уронить строительство поймать. Затянуться приличный правление дыхание банк остановить научить.","estimatedTime":"5 weeks"}'

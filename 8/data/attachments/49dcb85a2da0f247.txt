@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjIyLjI1MDYxMyIsInVzZXJfaWQiOiIxYjI3MGQyMS0yZGQ5LTQwOTAtODU2MS1iNTY5OGI5YjY1OTcifQ.ESKYYeEsrpVrJluT7EGWf1c6fftaspUz1kzHu94a3JE' \
+  -H 'content-length: 605' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Мальчишка некоторый вывести важный мгновение.","maxScore":84,"minScore":17,"description":"Присесть крыса более промолчать аж. Ученый построить расстройство естественный поймать смертельный.\nНаслаждение домашний место решетка мера. Отъезд эффект июнь сустав порода.","estimatedTime":"2 weeks","previewFileId":"66a700ca-704e-453d-8797-4e02ff47d52d","createdByUserId":"1b270d21-2dd9-4090-8561-b5698b9b6597"}'

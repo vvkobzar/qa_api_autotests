@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjI0LjcwNTU2NiIsInVzZXJfaWQiOiIyM2IwYmQwMC1iZjlhLTRiMzEtOWY1Yy1hOTJjMmY4NmVhNmEifQ.to2uZEOO1-V9eMNw-uAojBdzlB6sggDBBOTVMIJnX0g' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Что народ актриса дурацкий лететь.","maxScore":53,"minScore":28,"description":"Эффект космос плавно тревога рис умирать уточнить. Кузнец новый наступать художественный.","estimatedTime":"2 weeks","previewFileId":"dee9bbfc-8a59-4cc4-bfe6-0a275a737330","createdByUserId":"23b0bd00-bf9a-4b31-9f5c-a92c2f86ea6a"}'

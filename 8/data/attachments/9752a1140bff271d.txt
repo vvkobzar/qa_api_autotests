@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjIyLjgzNTM0NiIsInVzZXJfaWQiOiJhMWM3OTRkOC02ZTJmLTQwMDctYWViYy0wYjlhYmViMTk2N2IifQ.kEi9GlXGSSPqvLpnGM6eRFER8G9d0wG9ZiI7hV0N0tY' \
+  -H 'content-length: 542' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Магазин новый о налоговый потрясти заложить.","maxScore":96,"minScore":26,"description":"Протягивать точно плод освободить плавно. Возникновение тревога один. Задержать лиловый ученый сынок сынок.\nОколо наступать вывести пробовать.","estimatedTime":"9 weeks","previewFileId":"39449db5-db96-4c73-ae8d-6d5ef65dd855","createdByUserId":"a1c794d8-6e2f-4007-aebc-0b9abeb1967b"}'

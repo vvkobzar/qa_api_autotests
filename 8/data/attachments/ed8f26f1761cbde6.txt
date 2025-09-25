@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjE5LjU4MjUxNSIsInVzZXJfaWQiOiIzNDA1MzcwZi1hZGU2LTQ1MzEtODUyNS0wMjRhYmU5YzYxYTQifQ.dXEKxVqX7CZPgwVLQ8BmXH3tMZmkssK9tYxMSULCN2Q' \
+  -H 'content-length: 558' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Способ бригада пространство отдел монета снимать.","maxScore":93,"minScore":12,"description":"Тесно приятель вывести пища вряд товар мальчишка бочок. Редактор основание умолять стакан опасность. Чем конструкция адвокат товар ремень песенка.","estimatedTime":"4 weeks","previewFileId":"6e0c7b96-2f77-4a9a-a87d-5f6d8f5b0373","createdByUserId":"3405370f-ade6-4531-8525-024abe9c61a4"}'

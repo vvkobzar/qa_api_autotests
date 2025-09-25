@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjI0LjA2ODM2OCIsInVzZXJfaWQiOiJhNzQ5YzQ4Ny0xMWVmLTQ5NzItYTNkZi00MDlmNGRkZDgzOTgifQ.Ruzm8qQ89u1Tg9cDXZo81qyMEnhE1N-y7p_ErO1KUjU' \
+  -H 'content-length: 624' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Передо видимо коммунизм мальчишка.","maxScore":71,"minScore":12,"description":"Применяться одиннадцать слишком помолчать поговорить тюрьма прощение растеряться. Угол разнообразный плод монета карман нажать скрытый тревога. Вперед шлем освободить спалить темнеть левый порог.","estimatedTime":"5 weeks","previewFileId":"7bc3810f-fb20-4b93-ac34-bcb945e25efa","createdByUserId":"a749c487-11ef-4972-a3df-409f4ddd8398"}'

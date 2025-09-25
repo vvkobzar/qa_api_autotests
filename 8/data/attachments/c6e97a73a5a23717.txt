@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDExOjA5OjIzLjQ4NjQ3MSIsInVzZXJfaWQiOiI1ZGVjNjk4Zi1iZTdiLTQ3YzUtODlkYS1hYzg3NDFhNmI3NDQifQ.h1ZEXi-A9gmS_rcXkMSAQq9np7gMMnHJJeKw7PVUp84' \
+  -H 'content-length: 597' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Пятеро мрачно манера ход мимо рассуждение.","courseId":"8ea303f4-7631-4130-9903-b564010e8fc9","maxScore":72,"minScore":12,"orderIndex":66,"description":"Намерение растеряться вперед команда.\nПокинуть видимо соответствие металл. Даль карандаш рот некоторый девка премьера.\nВыгнать ярко житель инструкция степь дьявол. Заплакать ночь соответствие эпоха.","estimatedTime":"2 weeks"}'
