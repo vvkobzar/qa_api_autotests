@@ -5,27 +5,33 @@ from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRe
     CreateCourseResponseSchema
 from clients.private_httpx_builder import AuthenticationUserSchema, get_private_http_client
 from tools.routes import APIRoutes
+from clients.api_coverage import tracker
 
 
 class CoursesClient(APIClient):
     @allure.step("Get courses")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def get_courses_api(self, user_id: GetCoursesQuerySchema) -> Response:
         return self.get(APIRoutes.COURSES, params=user_id.model_dump(by_alias=True))
 
     @allure.step("Get courses by id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def get_course_api(self, course_id: str) -> Response:
         return self.get(f"{APIRoutes.COURSES}/{course_id}")
 
     @allure.step("Create courses")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def create_course_api(self, request: CreateCourseRequestSchema) -> Response:
         return self.post(APIRoutes.COURSES, json=request.model_dump(by_alias=True))
 
     @allure.step("Update courses by id {course_id}")
-    def update_course_api(self, course_id, request: UpdateCourseRequestSchema) -> Response:
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
+    def update_course_api(self, course_id: str, request: UpdateCourseRequestSchema) -> Response:
         return self.patch(f"{APIRoutes.COURSES}/{course_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete courses by id {course_id}")
-    def delete_course_api(self, course_id) -> Response:
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
+    def delete_course_api(self, course_id: str) -> Response:
         return self.delete(f"{APIRoutes.COURSES}/{course_id}")
 
     def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
